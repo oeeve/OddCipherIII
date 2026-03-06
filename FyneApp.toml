@@ -1,0 +1,8 @@
+Website = "https://github.com/oeeve/OddCipherII"
+
+[Details]
+  Icon = "a.png"
+  Name = "OddCipherII"
+  ID = "com.oeeve.oddcipherII"
+  Version = "2.0.0"
+  Build = 5

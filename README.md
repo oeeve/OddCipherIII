@@ -1,0 +1,52 @@
+<a name="readme-top"></a>
+
+# TBA!
+
+<!-- ABOUT THE PROJECT -->
+## OddCipherIII
+A Small executable based on Go and Fyne. Plays music and encodes secrets. // A base executable for multiple UC2DIN10 Registry tests.
+
+|      MacOS 14    |      Windows 11           |
+| :----------------------: | :-----------------------: |
+| ![](readme/macos.png) | ![](readme/win.png) |
+
+
+Download the executables for quick testing:
+
+[![Download](https://custom-icon-badges.demolab.com/badge/Windows-5E5E5E?style=flat&logo=download&logoColor=white)](https://github.com/oeeve/OddCipherII/raw/main/readme/OddCipherII.exe)
+[![Download](https://custom-icon-badges.demolab.com/badge/Mac-5E5E5E?style=flat&logo=download&logoColor=white)](https://github.com/oeeve/OddCipherII/raw/main/readme/OddCipherII.app.zip)
+
+
+<!-- Prerequisites -->
+### Prerequisites
+
+    pip intall PyQt5 pyinstaller
+
+
+<!-- Building -->
+### Building
+
+Building on **Windows** _(Use an AMD machine, pyinstaller does not work in Windows VM's on ARM)_:
+   ```sh
+   Python PyInstaller --onefile --upx-dir=/upx422 --windowed --add-data "a.png:." --add-data "odd.png:." --add-data "b.mp3:." --icon "a.ico" OddCipherII.py
+   ```
+
+Building on **macOS** or **Linux**:
+   ```sh
+   pyinstaller --onefile --upx-dir=/opt/homebrew/bin/upx --windowed --add-data "a.png:." --add-data "odd.png:." --add-data "b.mp3:." --icon "a.ico" OddCipherII.py
+   ```
+
+   Tested [UPX](https://upx.github.io), but it did litte/nothing for size or startupt speed, but increased the likelihood of the .exe being flagged by windows defender. (can just be left out). (signtool and a CA certificate should be used for a proper  --onefile executable).
+
+<!-- Demo -->
+### Demo
+[![OddCipherII](readme/vid.png)](https://vimeo.com/914712063/081afeb949?share=copy)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+`Until next time...`
+
+  <a href="https://github.com/oeeve">
+    <img src="readme/4Fsq2.png" alt="Logo" width="80" height="80">
+  </a>
